@@ -234,17 +234,15 @@ public class Principal {
         }
 
 
+        double media = (acertos / 15.0) * 100;
+
         System.out.println("==================================================");
         System.out.println("FIM DO QUIZ!");
-        System.out.println("Você acertou " + acertos + " de 15 questões.");
-
-        if (acertos >= 12) {
-            System.out.println("Excelente! Você domina o assunto!");
-        } else if (acertos >= 8) {
-            System.out.println("Bom resultado! Continue estudando.");
-        } else {
-            System.out.println("Vale revisar o conteúdo de segurança da informação.");
-        }
+        System.out.println("Questões acertadas: " + acertos + " de 15");
+        System.out.printf("Média de acerto: %.2f%%%n", media);
+        System.out.println("Obrigado por participar do nosso quiz sobre Segurança da Informação!");
         System.out.println("==================================================");
     }
 }
+
+
